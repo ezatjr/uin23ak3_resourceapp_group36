@@ -1,0 +1,71 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #58699D;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+.container {
+    background-color: #fff;
+    height: 60%;
+    width: 80%; /* Adjust the width of the container as needed */
+    max-width: 950px; 
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+main {
+    margin: 20px 0; 
+}
+
+.tab-container {
+    background-color: #58699D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tab-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; /* Spread tabs evenly across the container */
+    width: 100%; /* Ensure the tabs take the full width of the container */
+}
+
+.tab-menu li {
+    flex-basis: calc(20% - 10px); /* Each tab takes 20% of the width */
+    background-color: #2A324B;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    color: #fff; 
+    text-align: center; 
+}
+
+.tab-menu li.active {
+    background-color: #fff;
+    color: #000; 
+}
+
+.tab-menu li:active {
+    background-color: #fff;
+    color: #000; 
+}
+
+.tab-menu li a:visited {
+    color: #fff; 
+}
+
+.resource-details {
+    margin: 50px;
+}
