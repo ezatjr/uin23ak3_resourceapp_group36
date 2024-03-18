@@ -10,9 +10,12 @@ const HTMLResources = () => {
       <p>{htmlResources.text}</p> {/* P-tag som viser teksten til ressursen. */}
 
       <ul>
-        {htmlResources.sources.map((source, index) => (
+        {/* Mapper gjennom arrayen. Sources skal inneholde informasjon om ulike kilder til ressurser */}
+        {htmlResources.sources.map((source, index) => ( 
           <li key={index}><a href={source.url}>{source.title}</a></li>
         ))}
+        {/* For hver kilde, blir det generert listeelement. Key Index brukes for å gi hvert <li> en unik nøkkel basert på indeksen i arrayen */}
+        {/* Inni hvert <li> er det også lagd en a href som er URL til kilden. */}
       </ul>
     </>
   );
