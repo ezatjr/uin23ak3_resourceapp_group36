@@ -1,5 +1,5 @@
-import React from 'react';
-import resources from '../resources';
+import React from 'react'; //Importer react, noe som er nødvendig for å bruker react komponenter.
+import resources from '../resources'; //Henter filen resources.
 
 const HTMLResources = () => {
   const htmlResources = resources.find(resource => resource.category === 'CSS'); //resources array brukes for å finne ressursen som tilhører kstergorien CSS ved hjelp av .find
