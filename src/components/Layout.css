@@ -11,7 +11,7 @@ body {
 .container {
     background-color: #fff;
     height: 60%;
-    width: 80%; /* Adjust the width of the container as needed */
+    width: 80%; /* Juster bredden på beholderen etter behov*/
     max-width: 950px; 
     display: flex;
     flex-direction: column;
@@ -37,12 +37,12 @@ main {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between; /* Spread tabs evenly across the container */
-    width: 100%; /* Ensure the tabs take the full width of the container */
+    justify-content: space-between; /* Fordel tappene jevnt over beholderen */
+    width: 100%; /* Sørg for at tappene tar hele bredden av beholderen */
 }
 
 .tab-menu li {
-    flex-basis: calc(20% - 10px); /* Each tab takes 20% of the width */
+    flex-basis: calc(20% - 10px); 
     background-color: #2A324B;
     border: 1px solid #ccc;
     padding: 10px;
