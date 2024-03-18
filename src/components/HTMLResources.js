@@ -10,10 +10,12 @@ const HTMLResources = () => {
       <p>{htmlResources.text}</p>
       <ul>
         {htmlResources.sources.map((source, index) => (
+      {htmlResources.sources.map((source, index) => (
           <li key={index}><a href={source.url}>{source.title}</a></li>
         ))}
       </ul>
     </>
+    </> 
   );
 }
 
