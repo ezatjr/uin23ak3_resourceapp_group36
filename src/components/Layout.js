@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
       </div>
       <main>
         <div className="resource-details">
-          {children} {/* Render children components here */}
+          {children} {/* Gjengi barnekomponenter her */}
         </div>
       </main>
     </div>
