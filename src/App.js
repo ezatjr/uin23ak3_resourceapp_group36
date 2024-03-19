@@ -1,7 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout';
-
+import HTMLResources from './components/HTMLResources'; // Import HTMLResources
+import CSSResources from './components/CSSResources';
+import JavaScriptResources from './components/JavaScriptResources';
+import ReactResources from './components/ReactResources';
+import SanityResources from './components/SanityResources';
 
 const App = () => {
   return (
