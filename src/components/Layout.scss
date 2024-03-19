@@ -59,7 +59,15 @@ main {
 
 .tab-menu li:active {
     background-color: #fff;
-    color: #000; 
+    color: black !important; 
+}
+.tab-menu li a {
+    color: inherit; /* Bruk foreldrenes farge*/
+    text-decoration: none; /* Fjern understreking fra lenker */
+}
+
+.tab-menu li.active a {
+    color: #000 !important;  /* Sett skriftfarge til svart for aktiv fane */
 }
 
 .tab-menu li a:visited {
