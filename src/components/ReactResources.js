@@ -2,15 +2,15 @@ import React from 'react';
 import resources from '../resources';
 
 const HTMLResources = () => {
-  const Resource = resources.find(resource => resource.category === 'React');
-
+  const reactResources = resources.filter(resource => resource.category === 'react');
   return (
     <>
-      <h2>{Resource.category}</h2>
-      <p>{Resource.text}</p>
+      <h2>React Resources</h2>
       <ul>
-        {Resource.sources.map((source, index) => (
-          <li key={index}><a href={source.url}>{source.title}</a></li>
+        {reactResources.map((resource, index) => (
+          <li key={index}>
+            <a href={resource.url}>{resource.title}</a>
+          </li>
         ))}
       </ul>
     </>
